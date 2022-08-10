@@ -33,3 +33,4 @@ for root, dirs, files in os.walk(yourpath, topdown=False):
             im.resize((128,128)).rotate(-90).convert("RGB").save("Processed/"+outfile, "JPEG", quality=100)
         except Exception as e:
             print (e)
+print("Task done!")
